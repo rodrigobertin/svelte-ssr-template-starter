@@ -1,13 +1,21 @@
-import './app.css'
+import './assets/sass/main.scss'
 
-import { mount } from 'svelte'
+import { hydrate } from 'svelte'
 import { ClientApp } from 'svelte-pilot'
 
 import router from './router'
 
-router.start(() =>
-  mount(ClientApp, {
-    props: { router },
-    target: document.getElementById('app')!
-  })
+router.start(
+  () => {
+    hydrate(ClientApp, {
+      props: { router },
+      target: document.getElementById('app')!
+    })
+    // @ts-ignore
+    delete window.__SSR_STATE__
+  },
+  {
+    // @ts-ignore
+    ssrState: window.__SSR_STATE__
+  }
 )

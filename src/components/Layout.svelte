@@ -1,11 +1,7 @@
 <script lang="ts">
   import {View} from "svelte-pilot";
+  import Header from "./Header.svelte";
 </script>
 
-<header>
-  Admin Header
-</header>
+<Header/>
 <View/>
-<footer>
-  Footer header
-</footer>

@@ -1,8 +1,7 @@
 <script lang="ts">
-    import {View} from "svelte-pilot";
+  import {Link, View} from "svelte-pilot";
+  import Header from "../components/Header.svelte";
 </script>
 
-<header>
-    Hola header
-</header>
+<Header/>
 <View/>

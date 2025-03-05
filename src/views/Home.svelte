@@ -1,4 +1,4 @@
 <script>
-    import { View } from "svelte-pilot";
+    import { View, Link } from "svelte-pilot";
 </script>
 <h1>Home</h1>
