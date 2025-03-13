@@ -1,4 +1,2 @@
-<script>
-    import { View, Link } from "svelte-pilot";
-</script>
+<script></script>
 <h1>Home</h1>

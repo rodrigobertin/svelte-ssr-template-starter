@@ -1,6 +1,6 @@
 import {Router} from 'svelte-pilot'
-import Layout from "./components/Layout.svelte";
 import DashBoard from "./views/DashBoard.svelte";
+import Admin from "./views/Admin.svelte";
 
 export default new Router({
   routes: [
@@ -21,7 +21,7 @@ export default new Router({
       children: [
         {
           path: '/admin',
-          component: DashBoard
+          component: Admin
         },
         {
           path: '/admin/home',
